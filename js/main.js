@@ -5,10 +5,15 @@ docElement.className = classes.join(" ");
 function setMainFrame(setFrameTo, isStudentPage, elementToSetActive) {
   var oldActiveClass = document.getElementsByClassName("active")[0];
   var main_iFrame = document.getElementById("main_iFrame");
+  var setActive;
+
+  if (typeof (elementToSetActive) == 'string'){
+    setActive = document.getElementById(elementToSetActive);
+  } else {
+    if (!!elementToSetActive) { setActive = elementToSetActive.parentNode; }
+  }
 
   if (isStudentPage) { main_iFrame.src = "studentPages/" + setFrameTo + "/index.html"; } else { main_iFrame.src = setFrameTo + ".html"; }
-
-  oldActiveClass.className = oldActiveClass.className.replace('active','');
-
-  if (typeof(elementToSetActive) == 'string') { document.getElementById(elementToSetActive).className = "active"; } else { elementToSetActive.parentNode.className = "active"; }
+  if (!!setActive) { setActive.className += " active"; }
+  if (!!oldActiveClass) { oldActiveClass.className = oldActiveClass.className.replace('active',''); }
 }
