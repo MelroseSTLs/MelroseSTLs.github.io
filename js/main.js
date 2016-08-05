@@ -3,12 +3,13 @@ var docElement = document.documentElement, jsClassName = ["js"], classes = docEl
 docElement.className = classes.join(" ");
 
 function setMainFrame(setFrameTo, isStudentPage, elementToSetActive) {
+  var oldActiveClass = document.getElementsByClassName("active")[0];
   if (isStudentPage) {
     document.getElementById("main_iFrame").src = "studentPages/" + setFrameTo + "/index.html";
   } else {
     document.getElementById("main_iFrame").src = setFrameTo + ".html";
   }
-  elementToSetActive.parentNode.className = "active";
-  var oldActiveClass = document.getElementsByClassName("active")[0];
   oldActiveClass.className = oldActiveClass.className.replace('active','');
+  //if (elementToSetActive='homeBtn') {document.getElementById("homeBtn")}
+  if (typeof(elementToSetActive) == 'string'){ document.getElementById(elementToSetActive).className = "active"; } else { elementToSetActive.parentNode.className = "active"; }
 }
