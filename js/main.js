@@ -13,7 +13,7 @@ function setMainFrame(setFrameTo, isStudentPage, elementToSetActive) {
     if (!!elementToSetActive) { setActive = elementToSetActive.parentNode; }
   }
 
-  if (isStudentPage) { main_iFrame.src = "studentPages/" + setFrameTo + "/index.html"; } else { main_iFrame.src = setFrameTo + ".html"; }
+  if (isStudentPage) { main_iFrame.src = "studentPages/" + setFrameTo + "/index.html"; } else { main_iFrame.src = setFrameTo; }
   if (!!setActive) { setActive.className += " active"; }
   if (!!oldActiveClass) { oldActiveClass.className = oldActiveClass.className.replace('active',''); }
 }
