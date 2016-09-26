@@ -11,7 +11,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/frame.css">
   <!-- JS -->
   <script src="js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -23,14 +23,14 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="javascript:void(0)" onclick="setMainFrame('home', false, 'homeBtn');"><img src="MelroseSTLs.github.io/img/Melrose M logo.jpg" height="25px"></a>
+        <a class="navbar-brand" href="javascript:void(0)" onclick="setMainFrame('https://melrosestl.blogspot.com', false, 'homeBtn');"><img src="img/Melrose M logo.jpg" height="25px"></a>
           <!--<i class="fa fa-graduation-cap"></i> STL</a>-->
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active" id="homeBtn"><a href="javascript:void(0)" onclick="setMainFrame('home', false, this);">Home</a></li>
+          <li class="active" id="homeBtn"><a href="javascript:void(0)" onclick="setMainFrame('https://melrosestl.blogspot.com', false, this);">Home</a></li>
           <li><a href="#">About</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Student Tech Blogs <span class="caret"></span></a>
@@ -58,6 +58,8 @@
               <li><a href="#">Mr. Cristiano</a></li>
             </ul>
           </li>
+          <li><a href="#">Shortlinks</a></li>
+          <li><a href="#">Chromebooks</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="http://melrosehigh.melroseschools.com/" target="_blank">MHS</a></li>
@@ -77,7 +79,7 @@
   </nav>
   <!-- End Bootstrap Navbar; Put Content Below -->
   <div class="mainFrame" style="height:90%;">
-    <iframe id="main_iFrame" src="home.html" style="width:100%;height:100%;" frameBorder="0">
+    <iframe id="main_iFrame" src="https://melrosestl.blogspot.com" style="width:100%;height:100%;" frameBorder="0">
       Please enable iFrames in order to view this content
     </iframe>
   </div>
