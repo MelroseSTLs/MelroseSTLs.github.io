@@ -1,12 +1,25 @@
 body {
   font-family: Arial, sans-serif;
 }
+nav {
+	background-color: red;
+	border-style: solid;
+	border-width: 2px;
+	padding: 8px;
+}
+
+h1 {
+	text-align: left;
+	text-decoration: none;
+}
+
 ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 li a{
+	text-decoration: none;
 	color: black
 }
 li {
@@ -16,5 +29,6 @@ li {
 	background-color: red
 }
 li a:hover{
-	background-color: gray
+	background-color: #cc0000;
+	padding: 8px;
 }
