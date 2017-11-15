@@ -2,17 +2,22 @@ body {
   font-family: Arial, sans-serif;
 }
 .topnav {
-	background-color: red;
+	background-color: #ff3333;
 	padding: 8px;
 }
 
 .topnav a {
 	color: black;
 	text-decoration: none;
+	padding: 8px;
 }
 
 .topnav a:hover {
-	background-color:gray;
+	background-color:red;
+}
+
+.topnav a:active {
+	background-color: red;
 }
 
 h1 {
