@@ -1,9 +1,26 @@
 body {
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+
 }
+
 .topnav {
 	background-color: #ff3333;
 	padding: 8px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.name {
+	align-self: flex-start;
+	color: white;
+	font-style: italic;
+}
+
+.spacer {
+	flex-grow: 2;
 }
 
 .topnav a {
@@ -14,6 +31,7 @@ body {
 
 .topnav a:hover {
 	background-color:red;
+	text-decoration: underline;  
 }
 
 .topnav a:active {
@@ -21,26 +39,15 @@ body {
 }
 
 h1 {
-	text-align: left;
 	text-decoration: none;
 }
 
 ul{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-li a{
-	text-decoration: none;
-	color: black
-}
-li {
-	display: inline;
-	padding: 8px;
-	margin: 8px;
+  margin: 8px;
+  padding: 8px;
 }
 
-li a:hover{
-	background-color: #cc0000;
-	padding: 8px;
+.teacher {
+	text-decoration: bold;
 }
