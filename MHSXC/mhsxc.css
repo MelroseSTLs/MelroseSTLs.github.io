@@ -10,7 +10,7 @@ body {
 
 .topnav {
 	background-color: #ff3333;
-	padding: 8px;
+	padding: 0;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -20,7 +20,7 @@ body {
 	align-self: flex-start;
 	color: white;
 	font-style: italic;
-	margin: 0;
+	margin: 8px;
 }
 
 .spacer {
@@ -28,18 +28,9 @@ body {
 }
 
 .topnav a {
-	color: black;
+	color: white;
 	text-decoration: none;
-	padding: 8px;
-}
-
-.topnav a:hover {
-	background-color:red;
-	text-decoration: underline;  
-}
-
-.topnav a:active {
-	background-color: red;
+	padding: 18px;
 }
 
 .heythere {
@@ -62,7 +53,7 @@ ul {
 }
 
 .teacher {
-	text-decoration: bold;
+	font-weight: bold;
 }
 
 .test {
@@ -70,4 +61,38 @@ ul {
 	margin: .67em 0;
 	font-weight: bold;
 	font-style: italic;
+}
+
+.coachemails {
+	padding-left: 8px;
+	margin: 4px;
+}
+
+.links {
+	text-decoration: underline;
+	color: black;
+}
+
+.links:hover {
+	color: gray;
+}
+
+.links a:hover {
+	color:gray;
+}
+
+.hvr-glow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
