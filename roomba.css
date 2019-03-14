@@ -1,0 +1,140 @@
+body {
+	font-family: arial, sans-serif;
+	display: flex;
+	flex-direction: row;
+}
+
+ul {
+	margin: 8px;
+}
+
+/* start of sidenav */
+
+.sidenav {
+	height: 100%;
+	width: 0px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: red;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	text-align: center;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 8px;
+	text-decoration: none;
+	font-size: 30px;
+	color: white;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: white;
+	background-color: #c60f0f;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 30px;
+	height: 30px;
+	width: 30px;
+}
+
+.span {
+	display: inline;
+	font-size: 30px;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	margin: 16px;
+}
+
+/* end of sidenav */
+
+.content {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.topdiv {
+	display: flex;
+	flex-direction: row;
+}
+
+.topbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.toplogo {
+	height: 100%;
+	width: 50%;
+}
+
+.logo {
+	height: 100px;
+	width: 250px;
+}
+
+.text {
+	border: 2px;
+	border-style: solid;
+	padding: 8px;
+	margin: 2px;
+	font-size: 16px;
+}
+
+.wntitle {
+	font-weight: bold;
+	margin: 0;
+}
+
+.wnlist {
+	padding: 0;
+}
+
+/* Photo CSS starts here */
+
+.pictures {
+	display: flex;
+	flex-direction: row;
+}
+
+.photo {
+	width: 50%;
+	height: 50%;
+	margin: 1px;
+}
+
+/* End of Photo CSS */
+
+.link {
+	color: black;
+}
+
+.link:hover {
+	color: gray;
+}
+
+/* maps css */
+
+.maps {
+	display: flex;
+	flex-direction: row;
+}
+
+.map {
+	width: 100%;
+	margin: 6px;
+}
+
+/* end of maps css*/
